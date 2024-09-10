@@ -4,8 +4,7 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomicfoundation/hardhat-verify");
 
 
-const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
-
+const { ARBITRUM_API_URL, ETHEREUM_API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
 /**
 
 * @type import('hardhat/config').HardhatUserConfig
@@ -43,9 +42,13 @@ module.exports = {
       hardhat: {},
 
       arbitrum_sepolia: {
-         url: API_URL,
+         url: ARBITRUM_API_URL,
          accounts: [`0x${PRIVATE_KEY}`]
-      }
+      },
+      sepolia: {
+        url: ETHEREUM_API_URL,
+        accounts: [`0x${PRIVATE_KEY}`]
+     }
    },
 
     etherscan: {
@@ -57,6 +60,14 @@ module.exports = {
           urls: {
             apiURL: "https://api-sepolia.arbiscan.io/api",
             browserURL: "https://sepolia.arbiscan.io/"
+          }
+        },
+        {
+          network: "sepolia",
+          chainId: 11155111,
+          urls: {
+            apiURL: "https://api-sepolia.etherscan.io/api",
+            browserURL: "https://sepolia.etherscan.io/"
           }
         }
       ]

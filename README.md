@@ -1,15 +1,13 @@
-# Hardhat workspace
+# Contracts
 
-## Setup
-
-```
-cp .env.example .env
-```
-
-## Commands
+1. Deploy
 
 ```
-1. npx hardhat compile
-2. npx hardhat run scripts/deploy_xxx.js
-3. npx hardhat verify CONTRACT_ADDRESS [PARAMS]
+npx hardhat run scripts/deploy.js 
+```
+
+2. Verify:
+
+```
+npx hardhat verify
 ```

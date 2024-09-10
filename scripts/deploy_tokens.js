@@ -2,34 +2,41 @@ const contractOwner = "0x395c78311A693B463Ce0B0b8a66C4bda04FB8924"
 
 async function main() {
   const tokens = [
+    // {
+    //   "initialOwner": contractOwner,
+    //   "name": "Vega USDC",
+    //   "symbol": "vegaUSDC",
+    //   "decimals": 6,
+    //   "totalSupply": BigInt("60000000000000"), // 60kk
+    // },
     {
       "initialOwner": contractOwner,
-      "name": "Vega USDC",
-      "symbol": "vegaUSDC",
+      "name": "artUSDC",
+      "symbol": "artUSDC",
       "decimals": 6,
       "totalSupply": BigInt("60000000000000"), // 60kk
     },
-    {
-      "initialOwner": contractOwner,
-      "name": "Vega tBTC",
-      "symbol": "vegaTBTC",
-      "decimals": 18,
-      "totalSupply": BigInt("60000000000000000000000000"), // 60kk
-    },
-    {
-      "initialOwner": contractOwner,
-      "name": "Vega WETH",
-      "symbol": "vegaWETH",
-      "decimals": 18,
-      "totalSupply": BigInt("60000000000000000000000000"), // 60kk
-    },
-    {
-      "initialOwner": contractOwner,
-      "name": "Vega EURT",
-      "symbol": "vegaEURT",
-      "decimals": 6,
-      "totalSupply": BigInt("60000000000000"), // 60kk
-    },
+    // {
+    //   "initialOwner": contractOwner,
+    //   "name": "Vega tBTC",
+    //   "symbol": "vegaTBTC",
+    //   "decimals": 18,
+    //   "totalSupply": BigInt("60000000000000000000000000"), // 60kk
+    // },
+    // {
+    //   "initialOwner": contractOwner,
+    //   "name": "Vega WETH",
+    //   "symbol": "vegaWETH",
+    //   "decimals": 18,
+    //   "totalSupply": BigInt("60000000000000000000000000"), // 60kk
+    // },
+    // {
+    //   "initialOwner": contractOwner,
+    //   "name": "Vega EURT",
+    //   "symbol": "vegaEURT",
+    //   "decimals": 6,
+    //   "totalSupply": BigInt("60000000000000"), // 60kk
+    // },
   ];
   var verifyCommands = []
 
